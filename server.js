@@ -3,7 +3,6 @@ const server = express();
 const db = require('./models')
 let cors = require('cors')
 
-
 server.use(cors())
 
 server.get('/', (req, res) => {
@@ -13,7 +12,7 @@ server.get('/', (req, res) => {
 server.get('/fannypacks', (req, res) => {
     db.Fannypack.find()
     .then((fannypacks) => {
-        res.send('hey here are your fannypacks')
+        res.send(fannypacks)
     })
     .catch(err => {
         console.log(err)
