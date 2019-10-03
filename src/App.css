@@ -8,7 +8,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,4 +19,19 @@
 
 .App-link {
   color: #09d3ac;
+}
+.man-interact {
+  display: flex;
+  justify-content: center;
+}
+.man-image img{
+  height: 300px;
+}
+.left-button {
+  padding: 50px 0px;
+  font-size: 24px;
+}
+.right-button {
+  padding: 50px 0px;
+  font-size: 24px;
 }
