@@ -7,11 +7,19 @@ export default function Home() {
         <div>
             <div className="body">
                 <div className="body-text">
-                    <h2>Hey there!</h2>
+                    <h3>We are bringing the dad fad back!</h3>
                 </div>
                 <HappyMan />
                 <div className="image-stack">
-                    
+                    <div>
+                        <img className="fanny-image" src={process.env.PUBLIC_URL + '/yourmom.png'} alt=""/>
+                    </div>
+                    <div >
+                        <img className="jorts-image" src={process.env.PUBLIC_URL + '/yourdad.png'} alt=""/>
+                    </div>
+                    <div>
+                        <img className="sandal-image" src={process.env.PUBLIC_URL + '/sandal.png'} alt=""/>
+                    </div>
                 </div>
             </div>
             <div className="divider">

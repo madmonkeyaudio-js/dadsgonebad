@@ -36,6 +36,7 @@ class fannyPacks extends Component {
                             <p>{item.price}</p>
                         </div>
                     </div>
+                    <br/>
                 </div>
             )
         })
