@@ -7,8 +7,8 @@
 }
 
 .App-header {
-  background-color: sandybrown;
-  min-height: 30vh;
+  background-color: rgb(171, 157, 146);
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,26 +40,19 @@
   background-color: white;
 }
 .man-image img{
-  height: 350px;
+  height: 400px;
 }
 .left-button {
   padding: 50px 0px;
   font-size: 24px;
-  border: 1px solid black;
   width: 80px;
-  background-color: rgb(255, 219, 187)
+  
 }
 .right-button {
   padding: 50px 0px;
   font-size: 24px;
-  border: 1px solid black;
   width: 80px;
-  background-color: rgb(255, 219, 187)
 }
-.wheel-div {
-  background-image: linear-gradient(rgb(255, 242, 168), rgb(255, 252, 161));
-}
-
 .directions {
   text-align: center;
   font-size: 22px;
@@ -97,27 +90,27 @@ input {
   text-shadow: 0 0 5px black;
 }
 .o1 {
-  background-color: rgb(218, 206, 45);
+  background-color: #CE902A;
   top: 0;
   left: 0;
   border-top-left-radius: 100%;
   z-index: 1;
 }
 .o2 {
-  background-color: rgb(83, 120, 199);
+  background-color: #78C0A8;
   top: 0;
   right: 0;
   border-top-right-radius: 100%;
   z-index: 0;
 }
 .o3 {
-  background-color: rgb(163, 24, 163);
+  background-color: #FCEBB6;
   bottom: 0;
   left: 0;
   border-bottom-left-radius: 100%;
 }
 .o4 {
-  background-color: rgb(34, 170, 34);
+  background-color: #F07818;
   bottom: 0;
   right: 0;
   border-bottom-right-radius: 100%;
