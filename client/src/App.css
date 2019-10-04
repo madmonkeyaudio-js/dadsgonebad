@@ -7,31 +7,237 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: sandybrown;
   min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(15px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #09d3ac;
 }
+.flex-items-display {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.left-display {
+  width: 50%;
+  border: 1px solid black;
+}
+.right-display {
+  width: 50%;
+  background-image: linear-gradient(rgb(252, 231, 177), rgb(249, 224, 172))
+}
 .man-interact {
   display: flex;
   justify-content: center;
+  border: 1px solid black;
+  background-color: white;
 }
 .man-image img{
-  height: 300px;
+  height: 350px;
 }
 .left-button {
   padding: 50px 0px;
   font-size: 24px;
+  border: 1px solid black;
+  width: 80px;
+  background-color: rgb(255, 219, 187)
 }
 .right-button {
   padding: 50px 0px;
   font-size: 24px;
+  border: 1px solid black;
+  width: 80px;
+  background-color: rgb(255, 219, 187)
 }
+
+.directions {
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+}
+.spin-the-wheel {
+  margin: auto;
+  width: 200px;
+  cursor: pointer;
+}
+label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+}
+.wheel {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  margin-left: -150px;
+}
+.option {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 5px black;
+}
+.o1 {
+  background-color: rgb(218, 206, 45);
+  top: 0;
+  left: 0;
+  border-top-left-radius: 100%;
+  z-index: 1;
+}
+.o2 {
+  background-color: rgb(83, 120, 199);
+  top: 0;
+  right: 0;
+  border-top-right-radius: 100%;
+  z-index: 0;
+}
+.o3 {
+  background-color: rgb(163, 24, 163);
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 100%;
+}
+.o4 {
+  background-color: rgb(34, 170, 34);
+  bottom: 0;
+  right: 0;
+  border-bottom-right-radius: 100%;
+}
+.message {
+  position: absolute;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  box-shadow: 0 0 5px black;
+  top: 50px;
+  left: 30px;
+  width: 100px;
+  z-index: 5;
+  opacity: 0;
+}
+.clicker {
+  position: absolute;
+  z-index: 30;
+  height: 0;
+  width: 0;
+  left: 80px;
+  top: -3px;
+  border-width: 20px 20px 0 20px;
+  transform: scaley(2);
+  transform-origin: 50% 0;
+  border-color: #111 transparent transparent transparent;
+  border-style: solid;
+ 
+}
+:checked ~ .wheel {
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(2215deg);
+  }
+}
+:checked ~ .message {
+  animation-name: winner;
+  animation-delay: 2.9s;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+@keyframes winner {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+:checked ~ .clicker {
+  animation-name: Clicker;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+@keyframes Clicker {
+  0%, 100% {
+    transform:  rotate(0deg) scaley(2);
+  }
+   5%, 10%, 16%, 23%, 31%, 40%, 50%, 61%, 73%, 86% {
+    transform:  rotate(-15deg) scaley(2);
+ 
+  }
+  7.5%, 13%, 20.5%, 27%, 35.5%, 45%, 55.5%, 67%, 79.5% {
+    transform:  rotate(-10deg) scaley(2);
+  } 
+}
+a {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50000;
+}
+:checked ~ a {
+  display: block;
+  animation-name: Linkable;
+  animation-delay: 3.1s;
+  animation-fill-mode: both;
+  animation-duration: 0.1s;
+}
+@keyframes Linkable {
+  0% {
+    bottom: 100%;
+  }
+  
+  100% {
+    bottom: 0;
+  }
+}
+.fanny {
+  margin-right: -50px;
+  margin-top: 60px;
+  border-radius: 30%;
+  height: 175px;
+  z-index: 1;
+}
+.bino {
+  height: 150px;
+}
+.sandals {
+  height: 150px;
+  margin-top: 75px;
+}
+.jorts {
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 30%;
+  height: 150px;
+}
+

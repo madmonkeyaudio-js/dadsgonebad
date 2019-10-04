@@ -4,7 +4,7 @@ class LeftButton extends Component {
     render() {
         return (
             <div className="left-button">
-                <a href="#" className="previous round">&#8249;</a>
+                <a href="#">&#8249;</a>
             </div>
         )
     }
