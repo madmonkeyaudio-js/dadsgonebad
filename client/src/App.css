@@ -5,17 +5,21 @@
 .App-header {
   background-color: rgb(171, 157, 146);
   min-height: 15vh;
-  max-height: 15vh;
+  max-height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(15px + 2vmin);
+  font-size: 15px;
   color: white;
 }
 
 .App-header img {
   height: 200px;
+}
+nav {
+  margin-top: -70px;
+  height: 100px;
 }
 
 .App-link {
