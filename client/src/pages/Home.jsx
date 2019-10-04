@@ -6,7 +6,9 @@ export default function Home() {
     return (
         <div>
             <HappyMan />
-            <Wheel />
+            <div className="wheel-div">
+                <Wheel />
+            </div>
         </div>
     )
 }

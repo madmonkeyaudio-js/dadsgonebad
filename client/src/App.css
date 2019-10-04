@@ -56,6 +56,9 @@
   width: 80px;
   background-color: rgb(255, 219, 187)
 }
+.wheel-div {
+  background-image: linear-gradient(rgb(255, 242, 168), rgb(255, 252, 161));
+}
 
 .directions {
   text-align: center;

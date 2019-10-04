@@ -4,7 +4,7 @@ class RightButton extends Component {
     render() {
         return (
             <div className="right-button">
-                <a href="#" className="next round">&#8250;</a>
+                <a href="#">&#8250;</a>
             </div>
         )
     }
