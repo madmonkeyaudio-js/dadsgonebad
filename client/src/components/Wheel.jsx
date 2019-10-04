@@ -4,9 +4,6 @@ class Wheel extends Component {
     render() {
         return (
             <div>
-                <div className="directions">
-                Click to spin the wheel to see what prize you won!
-            </div>
             <div className="spin-the-wheel">
             <label>
                 <input type="radio"/>

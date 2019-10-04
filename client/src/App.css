@@ -2,13 +2,10 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
 .App-header {
   background-color: rgb(171, 157, 146);
-  min-height: 10vh;
+  min-height: 15vh;
+  max-height: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,8 +14,18 @@
   color: white;
 }
 
+.App-header img {
+  height: 200px;
+}
+
 .App-link {
   color: #09d3ac;
+}
+.body {
+  display: flex;
+}
+.body-text {
+  width: 33%
 }
 .flex-items-display {
   display: flex;
@@ -31,12 +38,11 @@
 }
 .right-display {
   width: 50%;
-  background-image: linear-gradient(rgb(252, 231, 177), rgb(249, 224, 172))
+  background-image: linear-gradient(rgb(252, 231, 177), rgb(255, 213, 122))
 }
 .man-interact {
   display: flex;
   justify-content: center;
-  border: 1px solid black;
   background-color: white;
 }
 .man-image img{
@@ -52,6 +58,27 @@
   padding: 50px 0px;
   font-size: 24px;
   width: 80px;
+}
+.divider {
+  height: 50px;
+  background-color: #FCEBB6;
+  text-align: center;
+}
+.wheel-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.wheel-text {
+  width: 28%;
+  margin: 0 40px 10px 0px;
+  padding: 10px;
+}
+.placeholder {
+  width: 33%;
+}
+.quote {
+  padding: 15px;
 }
 .directions {
   text-align: center;

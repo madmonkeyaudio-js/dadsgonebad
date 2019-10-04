@@ -8,7 +8,7 @@ class HappyMan extends Component {
             <div className="man-interact">
                 <LeftButton />
                     <div className="man-image">
-                        <img src="https://st2.depositphotos.com/1854227/6571/i/950/depositphotos_65716507-stock-photo-funny-weak-sportsman-with-hands.jpg" alt=""/>
+                        <img src={process.env.PUBLIC_URL + '/slack-imgs.png'} alt=""/>
                     </div>
                 <RightButton />
             </div>
